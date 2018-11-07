@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{% for post in site.posts %}
+ <div style="height: 300px; background-color: #000;">
+
+ </div>
+  <article>
+   <h1>{{ post.title }}</h1>
+   <p>
+    {{ post.excerpt }}
+   </p>
+  </article>
+
+{% endfor %}

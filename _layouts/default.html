@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title> {% include meta.html %}
+  <!--[if lt IE 9]>
+     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+   <![endif]-->
+ <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+ <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+</head>
+<body>
+ <header>
+  <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+  <nav>
+   <a href="{{ site.baseurl }}/projekt">Projekt</a>
+   <a href="{{ site.baseurl }}/CV">CV</a>
+   <a href="{{ site.baseurl }}/folj">Följ</a>
+  </nav>
+ </header>
+
+ {{ relative_url }}
+ {{ content }}
+ <footer></footer>
+ {% include analytics.html %}
+</body>
+</html>

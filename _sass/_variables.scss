@@ -1,0 +1,9 @@
+$black: #000;
+$text: rgba($black, .7);
+$white: #fff;
+
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}

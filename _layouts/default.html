@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title> {% include meta.html %}
+ <title>{{ site.name }}: {{ site.description }}{% if page.title %} – {{ page.title }}{% endif %}</title> {% include meta.html %}
   <!--[if lt IE 9]>
      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
    <![endif]-->
@@ -18,7 +18,6 @@
   </nav>
  </header>
 
- {{ relative_url }}
  {{ content }}
  <footer></footer>
  {% include analytics.html %}
